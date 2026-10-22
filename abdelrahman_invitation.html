@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdelrahman & Salma 💗</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#f3b9cc;--rose:#d78ca8;--blush:#fff0f5;--gold:#ead7b4;--burgundy:#800020}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;overflow-x:hidden;background:radial-gradient(circle at top,#ffeaf2 0,#f8d7e3 48%,#f2bfd1 100%);font-family:Poppins,sans-serif;color:#800020;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px 14px;position:relative}
+.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.petal{position:absolute;top:-35px;width:14px;height:20px;border-radius:90% 0 90% 0;background:linear-gradient(145deg,#f5b6cb,#d87598);opacity:.55;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(60px,110vh,0) rotate(540deg)}}
+.scene{position:relative;z-index:1;width:100%;max-width:430px;display:flex;align-items:center;flex-direction:column}.floral-corner{position:fixed;z-index:0;color:#e6b3c5;opacity:.62;font-size:clamp(42px,9vw,76px);pointer-events:none;text-shadow:0 3px 12px #f2dbe4}.floral-corner.one{top:16px;left:14px;transform:rotate(-18deg)}.floral-corner.two{top:42px;right:12px;transform:rotate(20deg)}.floral-corner.three{bottom:18px;left:16px;transform:rotate(15deg)}.floral-corner.four{bottom:20px;right:14px;transform:rotate(-15deg)}
+.envelope-wrap{width:min(88vw,340px);height:220px;position:relative;perspective:1100px;cursor:pointer;filter:drop-shadow(0 18px 22px #bb64852a);animation:appear 1s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:none}}
+.envelope{position:absolute;inset:25px 0 0;height:185px;border-radius:7px 7px 14px 14px;background:linear-gradient(145deg,#fde8ef,#f5cbd9);box-shadow:inset 0 1px 0 #fff9;overflow:visible}
+.envelope:before,.envelope:after{content:"";position:absolute;inset:0;border-radius:inherit}
+.envelope:before{background:linear-gradient(32deg,transparent 49.5%,#f5b8ce 50%),linear-gradient(-32deg,transparent 49.5%,#fbd5e2 50%);clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.front{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(145deg,#fbe0e9,#f0bfd0);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);z-index:3}
+.flap{position:absolute;inset:0 0 auto;height:125px;background:linear-gradient(145deg,#fff4f8,#f8dce6);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .85s cubic-bezier(.2,.8,.2,1);z-index:5;backface-visibility:hidden}
+.seal{position:absolute;left:50%;top:81px;transform:translateX(-50%);z-index:6;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff8fb,#eab5c9);box-shadow:0 3px 12px #a64b6b55;color:white;font-size:21px;border:1px solid #fff8;transition:opacity .25s}
+.tap{position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);z-index:8;white-space:nowrap;padding:7px 18px;border:1px solid #f2bfd0;border-radius:30px;background:#fffafc;color:#b94f78;font-size:11px;letter-spacing:2px;text-transform:uppercase;box-shadow:0 5px 18px #b94f7817}
+.envelope-wrap.open .flap{transform:rotateX(180deg)}
+.envelope-wrap.open .seal{opacity:0}
+.envelope-wrap.open{animation:none}
+.hint{font-size:12px;letter-spacing:1px;color:#b57c91;margin-top:30px}
+.card{display:none;width:100%;margin-top:25px;padding:34px 23px 28px;border:1px solid #f5cbd9;border-radius:25px;background:linear-gradient(155deg,#fff0f5 0%,#fbd8e5 100%);box-shadow:0 20px 55px #a94b6c1a;opacity:0;transform:translateY(18px) scale(.97);transition:opacity .8s,transform .8s;position:relative;overflow:hidden}
+.card:before{content:"❀";position:absolute;top:8px;left:14px;color:#e9abc0;font-size:25px;opacity:.8}
+.card:after{content:"✿";position:absolute;bottom:5px;right:15px;color:#e9abc0;font-size:25px;opacity:.8}
+.card.show{opacity:1;transform:translateY(0) scale(1)}
+.script{font-family:'Great Vibes',cursive;color:#800020;font-size:clamp(39px,10vw,51px);line-height:1.2;margin:2px 0 5px}
+.smallcaps{font-size:10px;letter-spacing:4px;color:#800020;margin:9px 0 15px}
+.ornament{color:#800020;font-size:20px;letter-spacing:7px;margin:6px 0 16px}
+.line{font-family:'Playfair Display',serif;font-size:16px;line-height:1.65;min-height:8px;margin:4px 0;color:#800020}
+.line.emphasis{color:#800020}
+.rule{height:1px;width:80px;background:linear-gradient(90deg,transparent,#dfa4b8,transparent);margin:17px auto}
+#countdown{font-size:11px;letter-spacing:.5px;color:#b57c91;margin:16px 0}
+.location{display:inline-block;text-decoration:none;color:#800020;background:linear-gradient(135deg,#ffe8f0,#f7c9da);border:1px solid #f3d0de;padding:11px 22px;border-radius:28px;font-size:12px;box-shadow:0 5px 14px #d8759818;margin:5px 0 8px}
+.rsvp{display:none;margin-top:22px;opacity:0;transform:translateY(10px);transition:opacity .7s,transform .7s}
+.rsvp.show{display:block;opacity:1;transform:none}
+.rsvp-title{font-family:'Great Vibes',cursive;font-size:31px;color:#800020;margin-bottom:7px}
+.rsvp-note{font-size:11px;color:#a57c8b;margin-bottom:12px}
+.btns{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;border:1px solid #800020;color:#800020;padding:10px 14px;border-radius:28px;font-size:11px;transition:.25s;background:#fffafd}
+.btn.primary{background:linear-gradient(135deg,#d98aa8,#c76b8e);color:white;border-color:transparent}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 14px #d8759829}
+.footer{font-size:10px;color:#c19aa8;margin-top:18px}
+.heart{position:fixed;bottom:-25px;z-index:5;pointer-events:none;animation:heartUp 3.5s ease-out forwards}
+@keyframes heartUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:360px){.card{padding:30px 16px 25px}.line{font-size:15px}.btn{padding:9px 11px}}
+</style>
+</head>
+<body>
+<div class="petals" id="petals"></div><div class="floral-corner one">❀</div><div class="floral-corner two">✿</div><div class="floral-corner three">✿</div><div class="floral-corner four">❀</div>
+<main class="scene">
+  <div class="envelope-wrap" id="envelope" role="button" tabindex="0" aria-label="Open engagement invitation">
+    <div class="envelope"><div class="front"></div><div class="flap"></div><div class="seal">♥</div></div>
+    <div class="tap">Tap to open</div>
+  </div>
+  <div class="hint" id="hint">A little note, sealed with love ♡</div>
+  <section class="card" id="card" aria-live="polite">
+    <div class="script">Abdelrahman &amp; Salma</div>
+    <div class="smallcaps">JOYFULLY INVITE YOU TO CELEBRATE THEIR ENGAGEMENT</div>
+    <div class="ornament">✿ ♡ ✿</div>
+    <div class="line" id="l1"></div>
+    <div class="line" id="l2"></div>
+    <div class="line emphasis" id="l3"></div>
+    <div class="line" id="l4"></div>
+    <div class="line" id="l5"></div>
+    <div class="line" id="l6"></div>
+    <div class="ornament">❀</div>
+    <div id="countdown"></div>
+    <a class="location" href="https://maps.app.goo.gl/UN3b4KKkfpaaShq37?g_st=ic" target="_blank" rel="noopener">Location ♡</a>
+    <div class="rsvp" id="rsvp">
+      <div class="rule"></div>
+      <div class="rsvp-title">Will you be there?</div>
+      <div class="rsvp-note">It would mean the world to celebrate with you.</div>
+      <div class="btns">
+        <a class="btn primary" target="_blank" rel="noopener" href="https://wa.me/201095031238?text=Hello%20Salma%21%20I%27ll%20be%20joining%20your%20engagement%20celebration%20on%20November%2012.%20%F0%9F%92%97">Yes, with love 💗</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://wa.me/201095031238?text=Hello%20Salma%21%20I%27m%20sorry%20I%20can%27t%20make%20it%20to%20your%20engagement.%20Sending%20love%21">Sadly, can't make it</a>
+      </div>
+    </div>
+    <div class="footer">Made with love, just for you ♡</div>
+  </section>
+</main>
+<script>
+const petals=document.getElementById('petals');
+for(let i=0;i<20;i++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'%';p.style.animationDuration=(8+Math.random()*10)+'s';p.style.animationDelay=(-Math.random()*15)+'s';p.style.opacity=(.22+Math.random()*.42);p.style.transform='rotate('+Math.random()*360+'deg)';petals.appendChild(p);}
+let opened=false;
+function typeText(id,text,delay,speed=36){setTimeout(()=>{const el=document.getElementById(id);let i=0;const timer=setInterval(()=>{el.textContent+=text.charAt(i);i++;if(i>=text.length)clearInterval(timer);},speed);},delay);}
+function openLetter(){if(opened)return;opened=true;const env=document.getElementById('envelope');env.classList.add('open');document.getElementById('hint').style.display='none';setTimeout(()=>{const card=document.getElementById('card');card.style.display='block';requestAnimationFrame(()=>requestAnimationFrame(()=>card.classList.add('show')));typeText('l1','Together with our families,',250);typeText('l2','we would love for you to join us',1550);typeText('l3','as we celebrate our engagement 💍',3050);typeText('l4','Thursday, November 12, 2026',4700);typeText('l5','7:00 PM – 11:00 PM',6150);typeText('l6','Panorama Hall, inside El Kahraba Club',7300);setTimeout(()=>{document.getElementById('rsvp').style.display='block';requestAnimationFrame(()=>document.getElementById('rsvp').classList.add('show'));},9000);},780);}
+document.getElementById('envelope').addEventListener('click',openLetter);document.getElementById('envelope').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter();}});
+function floatHeart(){const h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','✿'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(14+Math.random()*18)+'px';h.style.color=['#d87598','#e9abc0','#bd6686'][Math.floor(Math.random()*3)];document.body.appendChild(h);setTimeout(()=>h.remove(),3600);}
+document.querySelectorAll('.btn').forEach(b=>b.addEventListener('click',()=>{for(let i=0;i<9;i++)setTimeout(floatHeart,i*90);}));
+const eventDate=new Date('2026-11-12T19:00:00').getTime();function countdown(){let d=eventDate-Date.now();const c=document.getElementById('countdown');if(d<=0){c.textContent='The celebration day is here!';return;}const days=Math.floor(d/86400000),hours=Math.floor(d%86400000/3600000),mins=Math.floor(d%3600000/60000);c.textContent=days+' days  ·  '+hours+' hours  ·  '+mins+' minutes to go';}countdown();setInterval(countdown,60000);
+</script>
+</body>
+</html>
